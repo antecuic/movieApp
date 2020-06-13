@@ -1,0 +1,74 @@
+.Card {
+    width: 14rem;
+    height: 23rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+
+    transition: all .3s ease;
+
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, .5);
+
+    overflow: auto;
+    
+    color: #eee;
+
+    cursor: pointer;
+}
+
+.Card:hover {
+    transform: scale(1.06);
+}
+
+.CardName {
+    margin: 5px;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.CardImage {
+    width: 100%;
+    height: 75%;
+}
+
+.CardImage img {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Options {
+    width: 100%;
+    height: 1.7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.ReleaseDate {
+    font-size: 12px;
+    margin-left: 10px 10px 10px 10px;
+    transition: all .2s ease;
+}
+
+.AddToWatchlist:hover,
+.ReleaseDate {
+    color: rgb(212, 238, 66);
+    transform: scale(1.02);
+}
+
+@media only screen and (min-width: 850px) {
+
+    .Card {
+        width: 15rem;
+        height: 25rem;
+
+        margin: 15px;
+    }
+
+}

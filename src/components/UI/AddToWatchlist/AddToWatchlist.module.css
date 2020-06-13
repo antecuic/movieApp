@@ -1,0 +1,25 @@
+
+.AddToWatchlistH4 {
+    cursor: pointer;
+    color: #eee;
+    padding: 15px;
+
+    transition: all .2s ease-in;
+}
+
+.AddToWatchlistH4:hover {
+    transform: scale(1.04);
+    font-weight: bold;
+}
+
+.AddToWatchlistP {
+    font-size: 14px;
+    margin: 10px 10px 10px 10px;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.AddToWatchlistP:hover {
+    color: rgb(212, 238, 66);
+    transform: scale(1.02);
+}

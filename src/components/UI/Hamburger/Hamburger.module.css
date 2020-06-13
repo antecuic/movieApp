@@ -1,0 +1,61 @@
+.Icon {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+
+.Bright,
+.Bright::before,
+.Bright::after {
+    background: rgb(120, 172, 172);
+}
+
+
+.Dark,
+.Dark::before,
+.Dark::after {
+    background: black;
+}
+.Hamburger {
+    width: 30px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.Hamburger::before,
+.Hamburger::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: all .5s;
+    border-radius: 10px;
+
+}
+
+.Hamburger:before {
+    top: -16px;
+}
+
+.Hamburger:after {
+    top: 16px;
+}
+
+@media only screen and (min-width: 850px) {
+    
+    .Icon {
+        display: none;
+    }
+}

@@ -1,0 +1,139 @@
+.ResultContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(37, 33, 53);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: auto;
+    z-index: 101;
+}
+
+.Result {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+
+    padding-top: 3rem;
+    position: relative;
+}
+
+.MovieData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 40%;
+
+    margin-top: 2rem ;
+
+    position: relative;
+}
+
+.MainMovieData {
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column;
+
+    text-align: center;
+    color: #eee;
+}
+
+.MainMovieData p {
+    font-size: 12px;
+    margin: 10px 10px 0 10px;
+    padding: 3px;
+}
+
+.MainMovieData span {
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+    margin: 2px 2px 4px 2px;
+   
+}
+
+.MovieDetails {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    width: 100%;
+    height: 60%;
+    border-top: 1px solid rgb(120, 172, 172);
+    color: #eee;
+
+}
+
+.MovieDetails span {
+    color: rgb(120, 172, 172);
+}
+
+.MovieDetails p {
+    font-size: 14px;
+}
+
+.PosterContainer {
+    width: 50%;
+    height: 100%;
+}
+
+.PosterContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.AwardsContainer {
+    margin: 1rem 0;
+    padding-top: 10px;
+    border-top: 1px solid rgb(120, 172, 172);
+}
+
+.PlotContainer {
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(120, 172, 172);
+}
+
+.Watchlist {
+    
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    background-color: rgb(120, 172, 172);
+}
+
+@media only screen and (min-width: 850px) {
+
+    .Result {
+        margin-top: 2rem;
+        width: 60%;
+    }
+
+    .PosterContainer {
+        width: 300px;
+ 
+    }
+}
+
+@media only screen and (min-width: 500px) {
+
+    .PosterContainer {
+        width: 250px;
+ 
+    }
+}

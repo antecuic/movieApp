@@ -1,0 +1,25 @@
+.Results {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    overflow-y: scroll;
+    
+    padding-top: 1rem;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.NoData {
+    color: rgb(212, 238, 66);
+}
